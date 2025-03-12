@@ -1,0 +1,34 @@
+
+
+
+
+import React from 'react';
+
+const App = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.block}>
+        <p>Bloco 1: Este é o primeiro bloco de texto.</p>
+      </div>
+      <div style={styles.block}>
+        <p>Bloco 2: Este é o segundo bloco de texto.</p>
+      </div>
+    </div>
+  );
+};
+
+const styles = {
+  container: {
+    display: 'flex', // Usando flexbox para organizar os blocos lado a lado
+    justifyContent: 'space-between', // Espaçamento entre os blocos
+    gap: '20px', // Espaçamento entre os blocos
+  },
+  block: {
+    width: '45%', // Definindo largura para cada bloco
+    padding: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+  },
+};
+
+export default App;
