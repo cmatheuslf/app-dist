@@ -6,7 +6,7 @@ export default function DeviceList() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/devices")
+    fetch("http://18.228.228.184:5000/devices")
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {

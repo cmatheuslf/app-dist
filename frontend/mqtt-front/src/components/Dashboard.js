@@ -17,7 +17,7 @@ const Dashboard = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:5000/get-measurements/${device_id}`);
+        const response = await fetch(`http://18.228.228.184:5000/get-measurements/${device_id}`);
         const json = await response.json();
 
         // Processar os dados recebidos
